@@ -1,0 +1,11 @@
+# be sure to pip install imageio 
+# this is a python gif maker  
+
+import imageio.v3 as iio
+filenames = ['catopen.jpg', 'catclose.jpg']
+images = [ ]
+
+for filename in filenames: 
+    images.append(iio.imread(filename)) 
+iio.imwrite('team.gif', images, duration = 200, loop =0)
+
